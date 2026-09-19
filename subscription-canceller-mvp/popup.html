@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>OneClick Cancel</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>OneClick Cancel</h1>
+      <p class="subtitle">Cancele assinaturas com um clique</p>
+    </header>
+
+    <div class="service-select">
+      <label class="service-option">
+        <input type="radio" name="service" value="netflix" checked />
+        <span>Netflix</span>
+      </label>
+      <label class="service-option">
+        <input type="radio" name="service" value="spotify" />
+        <span>Spotify</span>
+      </label>
+    </div>
+
+    <button id="cancel-btn" class="cancel-btn">Cancelar assinatura</button>
+
+    <div id="status-box" class="status-box hidden">
+      <div id="status-label" class="status-label">Aguardando…</div>
+      <div id="log" class="log"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
